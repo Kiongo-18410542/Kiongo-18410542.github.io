@@ -1,0 +1,255 @@
+
+
+body {
+    background-image: url(images/blue-backg.jpg);
+    background-attachment: fixed;
+    font-size: 100%;
+}
+
+/* Navigation Bar*/
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+    height: 40px;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+.nav a {
+    align-items: center;
+    color: azure;
+    background-color: #080808;
+    flex: 1 1 0;
+    font-size: 1.56em;
+    overflow: hidden;
+    opacity: 1;
+    text-align: center;
+    text-decoration: overline;
+}
+.nav a:hover {
+    background-color: #080808;
+    opacity: 0.67;
+}
+.nav a:active {
+    background-color: aquamarine;
+}/* Navigation Bar end*/
+
+
+/*Header start */
+.header {
+    color: azure;
+    height: 80px;
+    font-size: 3em;
+    font-family: 'Oleo Script', cursive;
+    font-weight: bold;
+    text-align: center;
+    text-decoration: overline;
+}/*Header End*/
+
+
+/* Main container start */
+.main {
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+}/*Main Container End */
+
+
+
+/*section 1 start */
+.section1 {
+  background: aqua;
+  padding: 10px;
+  margin-top: 10px;
+  margin: 5px;
+  width: 30%;
+  font-weight: bold;
+  text-align: left;
+    
+}
+
+picture {
+    align-self: center;
+}
+.desc {
+    text-align: left;
+    font-size: 2em;
+    overflow-wrap: break-word;
+    
+}/*section 1 End */
+
+
+/*section 2 starts*/
+.section2 {
+    background-color: #5D97FF;
+  padding: 10px;
+  margin-top: 10px;
+  margin: 5px;
+  width: 30%;
+  font-weight: bold;
+  text-align: left;
+}
+.section2 p {
+    text-align: left;
+}
+
+.header2 {
+    font-size: 2em;
+    text-align: center;
+    text-decoration: overline;
+}/*section 2 ends*/
+
+
+/* Home page done */
+
+
+/*BIOGRAPHY PAGE */
+/*navigation bar is the same */
+
+/* Bio Header start */
+.bio1 {
+    color: azure;
+    height: 80px;
+    font-size: 3em;
+    font-family: 'Oleo Script', cursive;
+    font-weight: bold;
+    margin: 2.5%;
+    text-align: center;
+    text-decoration: overline;
+}
+
+.bio-con {
+    display: flex;
+    justify-content:  center;
+    
+}
+
+.sectionb1 {
+    background-color: aqua;
+    display: flex;
+    flex-direction: column;
+    margin: 10px;
+    padding: 5px;
+    width: 50vw;
+
+}
+
+.sectionb1 p {
+    font-family:'Oleo Script', cursive;
+    font-size: 2em;
+    align-self: center;
+}
+
+/* Collection Codes */
+
+.col-header {
+    color: azure;
+    height: 80px;
+    font-size: 3em;
+    font-family: 'Oleo Script', cursive;
+    font-weight: bold;
+    margin: 2.5%;
+    text-align: center;
+    text-decoration: overline;
+}
+
+
+.coll-container {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: center;
+
+}
+
+.coll-item img {
+    width: 100%;
+
+}
+
+.coll-item p {
+    overflow-wrap: break-word;
+}
+.coll-item {
+  background: aqua;
+  padding: 5px;
+  margin-top: 10px;
+  margin: 5px;
+  width: 30%;
+  font-weight: bold;
+  text-align: left;
+}
+
+/* CONTACT CODES */
+
+.contact-f {
+    color: azure;
+    height: 80px;
+    font-size: 3em;
+    font-family: 'Oleo Script', cursive;
+    font-weight: bold;
+    margin: 2.5%;
+    text-align: center;
+    text-decoration: overline;
+
+}
+
+.c-form {
+    display: flex;
+    justify-content: center;
+    border: 0;
+
+}
+
+/*footer start */
+footer {
+    bottom: 0;
+    left: 0;
+    display: flex;
+    flex-wrap: nowrap;
+    flex: 1 1 0;
+    width: 100%;
+}
+.f-1 a:hover {
+    opacity: 0.5;
+}
+.f-1 {
+    display: flex;
+    align-items: center;
+    background-color: #080808;
+    flex-grow: 1;
+    justify-content: space-around;
+    opacity: 1;
+}
+.f-p1 {
+    background-color: #080808;
+    color: white;
+    font-size: 2em;
+    font-family: 'Oleo Script', cursive;
+    justify-content: space-around;
+}/*footer ends*/
+
+
+@media screen and (min-width: 300px) {
+    .nav {
+        flex: 2.5;
+    }
+    .header {
+        flex: 2.5;
+    }
+    .section1 {
+        flex: 2.5;
+    }
+    .section2 {
+        flex: 2.5;
+    }
+    .f-1 {
+        flex: 2.5;
+    }
+}
+
+@media screen and (max-width: 600px) {
+    .nav a {
+  
+      width: 100%;
+    }
+  }
